@@ -12,5 +12,5 @@
 
 <h3>Round 3</h3>
 <p>This round had a very interesting dataset. The Train, Test and Validation folders further contained several folders named with their respective id's. Each id folder had 8 images and a json file. We were supposed to use all the 8 images together to generate the predictions. Link for the data is <a href="https://drive.google.com/file/d/1p5xIPI2e362RK9wgKP3NOwO4U6hNh2q1/view?usp=sharing">here</a>. Go through the data for a better understanding.</p>
-<p>Anyways, to solve this problem, we initially used the DenseNet201 pretrained model to generate features out from each image for an id and the combined them into a numpy array. These features were then made to pass through the GRU layers and the Dense layers. We extracted the ouput from one of the hidden layers and trained them using the CatBoost model to generate out submission file.</p>
+<p>Anyways, to solve this problem, we initially used the DenseNet201 pretrained model to generate features out from each image for an id and then combined them into a numpy array. These features were then made to pass through the GRU layers and the Dense layers. We extracted the ouput from one of the hidden layers and trained them using the CatBoost model to generate out submission file.</p>
 <p>We secured 1st position in the final and deciding round.</p>
